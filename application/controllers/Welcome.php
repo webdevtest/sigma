@@ -29,8 +29,8 @@ class Welcome extends CI_Controller {
    				 'protocol' => 'smtp',
    				 'smtp_host' => 'ssl://smtp.googlemail.com',
    				 'smtp_port' => 465,
-   				 'smtp_user' => 'm.thebrokenstar@gmail.com',
-   				 'smtp_pass' => 'delcorei3',
+   				 'smtp_user' => 'ashole@gmail.com',
+   				 'smtp_pass' => 'whstiaap,158',
    				 'mailtype'  => 'text', 
    				 'charset'   => 'iso-8859-1'
 				);
