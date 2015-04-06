@@ -22,4 +22,23 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function sendMail(){
+		
+		$config = Array(
+   				 'protocol' => 'smtp',
+   				 'smtp_host' => 'ssl://smtp.googlemail.com',
+   				 'smtp_port' => 465,
+   				 'smtp_user' => 'm.thebrokenstar@gmail.com',
+   				 'smtp_pass' => 'delcorei3',
+   				 'mailtype'  => 'text', 
+   				 'charset'   => 'iso-8859-1'
+				);
+		$this->load->library('email', $config);
+		$this->email->set_newline("\r\n");
+
+		// Set to, from, message, etc.
+
+		$result = $this->email->send();
+	}
 }
